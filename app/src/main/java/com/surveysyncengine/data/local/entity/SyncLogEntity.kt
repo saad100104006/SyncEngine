@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey
 // ---------------------------------------------------------------------------
 // SyncLogEntity — append-only audit trail for remote diagnostics
 // ---------------------------------------------------------------------------
+
 @Entity(tableName = "sync_log")
 data class SyncLogEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,

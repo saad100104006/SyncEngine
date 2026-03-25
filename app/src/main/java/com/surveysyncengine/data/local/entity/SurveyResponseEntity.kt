@@ -7,6 +7,7 @@ import com.surveysyncengine.domain.model.SyncStatus
 // ---------------------------------------------------------------------------
 // SurveyResponseEntity
 // ---------------------------------------------------------------------------
+
 @Entity(tableName = "survey_responses")
 data class SurveyResponseEntity(
     @PrimaryKey val id: String,

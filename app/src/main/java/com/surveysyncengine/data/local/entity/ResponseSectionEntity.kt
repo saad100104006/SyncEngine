@@ -10,6 +10,7 @@ import androidx.room.PrimaryKey
 // Stores repeating groups. Each row = one repetition of one section type.
 // answers serialized as JSON via TypeConverter.
 // ---------------------------------------------------------------------------
+
 @Entity(
     tableName = "response_sections",
     foreignKeys = [ForeignKey(

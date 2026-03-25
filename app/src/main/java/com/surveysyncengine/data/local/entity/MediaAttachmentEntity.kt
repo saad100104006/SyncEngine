@@ -9,6 +9,7 @@ import com.surveysyncengine.domain.model.UploadStatus
 // ---------------------------------------------------------------------------
 // MediaAttachmentEntity
 // ---------------------------------------------------------------------------
+
 @Entity(
     tableName = "media_attachments",
     foreignKeys = [ForeignKey(
