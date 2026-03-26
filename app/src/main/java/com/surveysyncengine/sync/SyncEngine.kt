@@ -12,7 +12,30 @@ import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.sync.Mutex
 import java.util.UUID
 
-
+// ---------------------------------------------------------------------------
+// SyncEngine
+//
+// Depends only on domain interfaces — no imports from data or Android.
+// This is the core Clean Architecture rule: inner layers know nothing
+// about outer layers.
+//
+//   SyncEngine → SurveyRepository (domain interface)
+//   SyncEngine → SurveyApiService (domain interface)
+//   SyncEngine → DevicePolicyEvaluator (sync-layer interface, pure Kotlin)
+//   SyncEngine → NetworkErrorClassifier (pure Kotlin)
+//
+// Scenarios handled:
+//   1. Offline storage  — delegates to repository; engine only reads pending
+//   2. Partial failure  — per-item status tracked; only failed re-uploaded
+//   3. Network degradation — NetworkErrorClassifier triggers early termination
+//   4. Concurrent sync  — Mutex.tryLock() returns AlreadyRunning immediately
+//   5. Error mapping    — Throwable.toSyncError() normalises all failure types
+//
+// Bonus:
+//   • Progress reporting via SharedFlow<SyncProgress>
+//   • Device-aware policy via DevicePolicyEvaluator
+//   • Diagnostic logging via SurveyRepository.logSyncEvent()
+// ---------------------------------------------------------------------------
 open class SyncEngine(
     private val repository: SurveyRepository,           // domain interface ✓
     private val apiService: SurveyApiService,            // domain interface ✓
