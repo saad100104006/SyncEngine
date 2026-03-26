@@ -23,7 +23,6 @@ runnerVersion = "1.5.2"
 turbine = "1.2.1"
 turbineVersion = "1.1.0"
 workVersion = "2.9.0"
-glance = "1.1.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -54,7 +53,6 @@ robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectr
 robolectric-v4111 = { module = "org.robolectric:robolectric", version.ref = "robolectricVersion" }
 turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
 turbine-v110 = { module = "app.cash.turbine:turbine", version.ref = "turbineVersion" }
-androidx-glance = { group = "androidx.glance", name = "glance", version.ref = "glance" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
