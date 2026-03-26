@@ -267,7 +267,7 @@ class DataLayerTest {
         assertEquals(2_000_000L, stats.totalPendingBytes)
         assertEquals(1_000_000L, stats.totalSyncedBytes)
     }
-    
+
     @Test
     fun `GpsBoundary with fewer than 3 vertices is flagged as incomplete`() {
         val incomplete = AnswerValue.GpsBoundary(
