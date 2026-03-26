@@ -4,7 +4,7 @@ import com.surveysyncengine.domain.error.SyncError
 import com.surveysyncengine.domain.error.toSyncError
 import com.surveysyncengine.domain.model.SurveyResponse
 import com.surveysyncengine.domain.api.SurveyApiService
-import com.survey.sync.domain.repository.SurveyRepository
+import com.surveysyncengine.domain.repository.SurveyRepository
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow

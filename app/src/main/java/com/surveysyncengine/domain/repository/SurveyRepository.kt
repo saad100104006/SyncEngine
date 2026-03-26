@@ -1,4 +1,4 @@
-package com.survey.sync.domain.repository
+package com.surveysyncengine.domain.repository
 
 import com.surveysyncengine.domain.model.DiagnosticsSnapshot
 import com.surveysyncengine.domain.model.StorageStats

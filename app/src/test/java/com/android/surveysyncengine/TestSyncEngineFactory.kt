@@ -1,6 +1,6 @@
 package com.android.surveysyncengine
 
-import com.survey.sync.domain.repository.SurveyRepository
+import com.surveysyncengine.domain.repository.SurveyRepository
 import com.surveysyncengine.domain.model.StorageStats
 import com.surveysyncengine.domain.model.SurveyResponse
 import com.surveysyncengine.domain.model.SyncStatus

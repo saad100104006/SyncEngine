@@ -6,7 +6,7 @@ import com.surveysyncengine.data.local.entity.toEntity
 import com.surveysyncengine.domain.model.StorageStats
 import com.surveysyncengine.domain.model.SurveyResponse
 import com.surveysyncengine.domain.model.SyncStatus
-import com.survey.sync.domain.repository.SurveyRepository
+import com.surveysyncengine.domain.repository.SurveyRepository
 import com.surveysyncengine.data.local.db.dao.MediaAttachmentDao
 import com.surveysyncengine.data.local.db.dao.SurveyResponseDao
 import com.surveysyncengine.data.local.db.dao.SyncLogDao
