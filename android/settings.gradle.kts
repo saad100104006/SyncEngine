@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Survey Sync Engine Android"
+rootProject.name = "Survey Sync Engine"
 include(":app")
