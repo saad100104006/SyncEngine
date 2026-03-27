@@ -39,7 +39,11 @@ final class SyncWorkerTests: XCTestCase {
         // with `override func sync()`. Actors cannot be subclassed in Swift — the compiler
         // rejects inheritance from an actor. Fix: AlreadyRunningStub is a plain class that
         // conforms directly to SyncEngineProtocol. SyncWorker now accepts the protocol.
-        let result = await SyncWorker(engine: AlreadyRunningStub()).doWork()
+        let stub = AlreadyRunningStub()
+
+        // SyncWorker now sees 'stub' as a valid 'SyncEngineProtocol'
+        let result = await SyncWorker(engine: stub).doWork()
+        
         assertOutputType(result, "ALREADY_RUNNING")
     }
 
@@ -64,10 +68,13 @@ final class SyncWorkerTests: XCTestCase {
     }
 }
 
-// Conforms to the protocol — no subclassing needed.
-private class AlreadyRunningStub: SyncEngineProtocol {
+/// A modern stub that conforms to SyncEngineProtocol.
+/// Changed from 'class' to 'actor' to satisfy the 'Actor' protocol requirement.
+/// A test-only stub that requires no dependencies.
+private actor AlreadyRunningStub: SyncEngineProtocol {
     func sync() async -> SyncResult { .alreadyRunning }
-    var progressPublisher: AnyPublisher<SyncProgress, Never> {
+    
+    nonisolated var progressPublisher: AnyPublisher<SyncProgress, Never> {
         PassthroughSubject<SyncProgress, Never>().eraseToAnyPublisher()
     }
 }

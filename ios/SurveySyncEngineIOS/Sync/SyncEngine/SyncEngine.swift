@@ -15,6 +15,14 @@ private enum UploadOutcome {
     case failure(SyncError)
 }
 
+/// A contract defining the synchronization engine's capabilities.
+/// Adopters (like our SyncEngine actor) provide thread-safe implementations
+/// of these requirements.
+public protocol SyncEngineProtocol: Actor {
+    func sync() async -> SyncResult
+    var progressPublisher: AnyPublisher<SyncProgress, Never> { get }
+}
+
 // ---------------------------------------------------------------------------
 // SyncEngine
 //
@@ -58,7 +66,7 @@ private enum UploadOutcome {
 //   • Device-aware policy via DevicePolicyEvaluator
 //   • Diagnostic logging via SurveyRepository.logSyncEvent()
 // ---------------------------------------------------------------------------
-public actor SyncEngine {
+public actor SyncEngine: SyncEngineProtocol {
 
     // ------------------------------------------------------------------
     // Dependencies — all protocols, no concrete types

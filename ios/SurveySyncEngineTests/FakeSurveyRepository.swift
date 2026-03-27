@@ -218,12 +218,4 @@ public class FakeSurveyRepository: SurveyRepository {
     public func pruneSyncedResponses(olderThanMs: Int64) async throws -> Int { return 0 }
 }
 
-// MARK: - Lock Extension
-extension NSLocking {
-    /// A convenience wrapper to execute a closure within a lock/unlock cycle.
-    func withLock<T>(_ block: () -> T) -> T {
-        lock()
-        defer { unlock() }
-        return block()
-    }
-}
+

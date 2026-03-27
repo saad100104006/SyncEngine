@@ -31,7 +31,7 @@ public enum FarmSectionKeys {
 /// Represents a single geographical coordinate captured by the device.
 /// Conforming to Codable allows this to be serialized into JSON for Core Data storage
 /// or network transmission via the SurveySyncEngine.
-public struct GpsPoint: Codable {
+public struct GpsPoint: Codable, Equatable {
     // The latitude coordinate in decimal degrees
     public let lat: Double
     
