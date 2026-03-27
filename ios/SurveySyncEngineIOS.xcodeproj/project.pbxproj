@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0B9D882F73F73800B715A5 /* AgricSurvey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE0B9D862F73F73800B715A5 /* AgricSurvey.xcdatamodeld */; };
+		CE4C48A22F751AB500DF75CB /* AgricSurvey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE0B9D862F73F73800B715A5 /* AgricSurvey.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE4C48A02F7519D100DF75CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0B9D712F73F6CA00B715A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE0B9D782F73F6CA00B715A5;
+			remoteInfo = SurveySyncEngineIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE0B9D772F73F6CA00B715A5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE0B9D792F73F6CA00B715A5 /* SurveySyncEngineIOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SurveySyncEngineIOS; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0B9D872F73F73800B715A5 /* AgricSurvey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgricSurvey.xcdatamodel; sourceTree = "<group>"; };
+		CE4C486B2F750DFB00DF75CB /* SurveySyncEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveySyncEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CE4C48762F75104D00DF75CB /* Exceptions for "SurveySyncEngineIOS" folder in "SurveySyncEngineTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Data/Local/CoreDataStack.swift,
+				Data/Local/Entities/CDAnswer.swift,
+				Data/Local/Entities/CDSurveyAttachment.swift,
+				Data/Local/Entities/CDSurveyResponse.swift,
+				Data/Local/Entities/CDSurveySection.swift,
+				Data/Local/Entities/CDSyncLog.swift,
+				Data/Local/LocalStorageService.swift,
+				Data/Mappers/SurveyDataConverter.swift,
+				Data/Mappers/SurveyMapper.swift,
+				Data/Remote/API/FakeSurveyApiService.swift,
+				Data/Remote/API/SurveyApiService.swift,
+				Data/Remote/DTOs/SurveyDTOs.swift,
+				Data/RepositoryImpl/SurveyRepositoryImpl.swift,
+				Domain/Constants/Constants.swift,
+				Domain/Errors/SyncError.swift,
+				Domain/Models/Entities/StorageStats.swift,
+				Domain/Models/Entities/SurveyResponse.swift,
+				Domain/Models/Enum/StatusEnums.swift,
+				Domain/Models/SyncModels.swift,
+				Domain/Models/ValueObjects/AnswerValue.swift,
+				Domain/Repositories/SurveyRepository.swift,
+				Infrastructure/Background/SyncWorker.swift,
+				main.swift,
+				Sync/Error/NetworkErrorClassifier.swift,
+				Sync/Models/DiagnosticsSnapshot.swift,
+				Sync/Models/FarmSectionKeys.swift,
+				Sync/Models/SurveySection.swift,
+				Sync/Policies/DefaultDevicePolicyEvaluator.swift,
+				Sync/Policies/DevicePolicy.swift,
+				Sync/Policies/FakeDevicePolicyEvaluator.swift,
+				Sync/SyncEngine/SyncEngine.swift,
+			);
+			target = CE4C486A2F750DFB00DF75CB /* SurveySyncEngineTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CE0B9D7B2F73F6CA00B715A5 /* SurveySyncEngineIOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CE4C48762F75104D00DF75CB /* Exceptions for "SurveySyncEngineIOS" folder in "SurveySyncEngineTests" target */,
+			);
+			path = SurveySyncEngineIOS;
+			sourceTree = "<group>";
+		};
+		CE4C486C2F750DFB00DF75CB /* SurveySyncEngineTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SurveySyncEngineTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE0B9D762F73F6CA00B715A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4C48682F750DFB00DF75CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE0B9D702F73F6CA00B715A5 = {
+			isa = PBXGroup;
+			children = (
+				CE0B9D862F73F73800B715A5 /* AgricSurvey.xcdatamodeld */,
+				CE0B9D7B2F73F6CA00B715A5 /* SurveySyncEngineIOS */,
+				CE4C486C2F750DFB00DF75CB /* SurveySyncEngineTests */,
+				CE0B9D7A2F73F6CA00B715A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE0B9D7A2F73F6CA00B715A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE0B9D792F73F6CA00B715A5 /* SurveySyncEngineIOS */,
+				CE4C486B2F750DFB00DF75CB /* SurveySyncEngineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE0B9D782F73F6CA00B715A5 /* SurveySyncEngineIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0B9D802F73F6CA00B715A5 /* Build configuration list for PBXNativeTarget "SurveySyncEngineIOS" */;
+			buildPhases = (
+				CE0B9D752F73F6CA00B715A5 /* Sources */,
+				CE0B9D762F73F6CA00B715A5 /* Frameworks */,
+				CE0B9D772F73F6CA00B715A5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CE0B9D7B2F73F6CA00B715A5 /* SurveySyncEngineIOS */,
+			);
+			name = SurveySyncEngineIOS;
+			packageProductDependencies = (
+			);
+			productName = SurveySyncEngineIOS;
+			productReference = CE0B9D792F73F6CA00B715A5 /* SurveySyncEngineIOS */;
+			productType = "com.apple.product-type.tool";
+		};
+		CE4C486A2F750DFB00DF75CB /* SurveySyncEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4C486F2F750DFB00DF75CB /* Build configuration list for PBXNativeTarget "SurveySyncEngineTests" */;
+			buildPhases = (
+				CE4C48672F750DFB00DF75CB /* Sources */,
+				CE4C48682F750DFB00DF75CB /* Frameworks */,
+				CE4C48692F750DFB00DF75CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE4C48A12F7519D100DF75CB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CE4C486C2F750DFB00DF75CB /* SurveySyncEngineTests */,
+			);
+			name = SurveySyncEngineTests;
+			packageProductDependencies = (
+			);
+			productName = SurveySyncEngineTests;
+			productReference = CE4C486B2F750DFB00DF75CB /* SurveySyncEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0B9D712F73F6CA00B715A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CE0B9D782F73F6CA00B715A5 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					CE4C486A2F750DFB00DF75CB = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = CE0B9D742F73F6CA00B715A5 /* Build configuration list for PBXProject "SurveySyncEngineIOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE0B9D702F73F6CA00B715A5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CE0B9D7A2F73F6CA00B715A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE0B9D782F73F6CA00B715A5 /* SurveySyncEngineIOS */,
+				CE4C486A2F750DFB00DF75CB /* SurveySyncEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE4C48692F750DFB00DF75CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE0B9D752F73F6CA00B715A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0B9D882F73F73800B715A5 /* AgricSurvey.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4C48672F750DFB00DF75CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4C48A22F751AB500DF75CB /* AgricSurvey.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE4C48A12F7519D100DF75CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE0B9D782F73F6CA00B715A5 /* SurveySyncEngineIOS */;
+			targetProxy = CE4C48A02F7519D100DF75CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE0B9D7E2F73F6CA00B715A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE0B9D7F2F73F6CA00B715A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CE0B9D812F73F6CA00B715A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DP2M5952AS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CE0B9D822F73F6CA00B715A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DP2M5952AS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CE4C48702F750DFB00DF75CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DP2M5952AS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agric.SurveySyncEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CE4C48712F750DFB00DF75CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DP2M5952AS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agric.SurveySyncEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE0B9D742F73F6CA00B715A5 /* Build configuration list for PBXProject "SurveySyncEngineIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0B9D7E2F73F6CA00B715A5 /* Debug */,
+				CE0B9D7F2F73F6CA00B715A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0B9D802F73F6CA00B715A5 /* Build configuration list for PBXNativeTarget "SurveySyncEngineIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0B9D812F73F6CA00B715A5 /* Debug */,
+				CE0B9D822F73F6CA00B715A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4C486F2F750DFB00DF75CB /* Build configuration list for PBXNativeTarget "SurveySyncEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4C48702F750DFB00DF75CB /* Debug */,
+				CE4C48712F750DFB00DF75CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE0B9D862F73F73800B715A5 /* AgricSurvey.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE0B9D872F73F73800B715A5 /* AgricSurvey.xcdatamodel */,
+			);
+			currentVersion = CE0B9D872F73F73800B715A5 /* AgricSurvey.xcdatamodel */;
+			path = AgricSurvey.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE0B9D712F73F6CA00B715A5 /* Project object */;
+}
