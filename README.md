@@ -25,7 +25,8 @@ Both platforms implement the same sync contract independently. No shared code la
 ```
 survey-sync/
 ├── android/        Kotlin — Room, Coroutines, WorkManager
+└── ARCHITECTURE.md Design decisions, trade-offs, future considerations
+└── README.md  Architechture, key design decisions, list of Dependencies
 ├── ios/            Swift — async/await, Actor, Swift Package
-├── ARCHITECTURE.md Design decisions, trade-offs, future considerations
 └── README.md       This file
 ```
